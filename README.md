@@ -19,7 +19,7 @@ Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
 ### Setup
 1. Clone the repository:
    ```bash
-   git clone https://github.com/YOUR-USERNAME/Personal-Portfolio.git
+   git clone https://github.com/animesh0404/Personal-Portfolio.git
    ```
 2. Navigate into the directory:
    ```bash

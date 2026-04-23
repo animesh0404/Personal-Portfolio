@@ -15,12 +15,12 @@ interface Project {
 }
 
 const projectImages = {
-  networkMitra: "/project-images/network-mitra.png",
-  expenseTracker: "/project-images/expense-tracker.png",
-  automationApis: "/project-images/automation-apis.png",
-  monitoringLab: "/project-images/monitoring-lab.png",
-  backendArchitecture: "/project-images/backend-architecture.png",
-  smartKnob: "/project-images/smart-knob.png"
+  networkMitra: "./project-images/network-mitra.png",
+  expenseTracker: "./project-images/expense-tracker.png",
+  automationApis: "./project-images/automation-apis.png",
+  monitoringLab: "./project-images/monitoring-lab.png",
+  backendArchitecture: "./project-images/backend-architecture.png",
+  smartKnob: "./project-images/smart-knob.png"
 };
 
 const projects: Project[] = [

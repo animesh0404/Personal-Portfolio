@@ -155,7 +155,9 @@ img {
 
 @media (max-width: 920px) {
   .nav-links .nav-cta {
-    margin: 12px 14px 14px;
+    margin: 12px auto 20px;
+    width: fit-content;
+    min-width: 180px;
   }
 }
 
@@ -954,6 +956,7 @@ textarea {
 
   .nav-links a {
     padding: 14px;
+    text-align: center;
   }
 
   .nav-links a.active::after {

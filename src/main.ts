@@ -159,7 +159,7 @@ function createProjectCard(project: Project): string {
         <h3>${project.title}</h3>
         <p>${project.summary}</p>
         <div class="project-tags">${tags}</div>
-        <button class="button button-ghost" type="button" data-open-project="${project.id}">Inspect Project</button>
+        <!-- <button class="button button-ghost" type="button" data-open-project="${project.id}">Inspect Project</button> -->
       </div>
     </article>
   `;

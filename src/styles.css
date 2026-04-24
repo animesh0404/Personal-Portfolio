@@ -148,6 +148,17 @@ img {
   background: var(--primary-strong);
 }
 
+.nav-links .nav-cta {
+  color: #1000a9 !important;
+  margin-left: 8px;
+}
+
+@media (max-width: 920px) {
+  .nav-links .nav-cta {
+    margin: 12px 14px 14px;
+  }
+}
+
 .button {
   display: inline-flex;
   min-height: 42px;
@@ -920,9 +931,6 @@ textarea {
     order: 3;
   }
 
-  .nav-cta {
-    display: none;
-  }
 
   .nav-links {
     position: fixed;

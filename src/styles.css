@@ -87,7 +87,9 @@ img {
   backdrop-filter: blur(16px);
 }
 
+/* nav needs position:relative so the absolutely-centered nav-links has a reference */
 .nav {
+  position: relative;
   min-height: 68px;
   display: flex;
   align-items: center;
@@ -117,12 +119,20 @@ img {
 }
 
 .nav-links {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   align-items: center;
   gap: 32px;
 }
 
-.nav-links a {
+/* Mobile-only resume inside dropdown — hidden on desktop */
+.nav-cta-mobile {
+  display: none !important;
+}
+
+.nav-links a:not(.button) {
   position: relative;
   color: rgba(218, 226, 253, 0.68);
   font-family: "Space Grotesk", sans-serif;
@@ -133,8 +143,8 @@ img {
   transition: color 180ms ease;
 }
 
-.nav-links a:hover,
-.nav-links a.active {
+.nav-links a:not(.button):hover,
+.nav-links a:not(.button).active {
   color: var(--primary);
 }
 
@@ -148,18 +158,6 @@ img {
   background: var(--primary-strong);
 }
 
-.nav-links .nav-cta {
-  color: #1000a9 !important;
-  margin-left: 8px;
-}
-
-@media (max-width: 920px) {
-  .nav-links .nav-cta {
-    margin: 12px auto 20px;
-    width: fit-content;
-    min-width: 180px;
-  }
-}
 
 .button {
   display: inline-flex;
@@ -952,6 +950,17 @@ textarea {
     order: 3;
   }
 
+  /* Hide desktop resume, show mobile resume inside dropdown */
+  .nav-cta {
+    display: none;
+  }
+
+  .nav-cta-mobile {
+    display: flex !important;
+    margin: 12px auto 20px;
+    width: fit-content;
+    min-width: 180px;
+  }
 
   .nav-links {
     position: fixed;
@@ -967,6 +976,9 @@ textarea {
     border-radius: 8px;
     background: rgba(2, 6, 23, 0.95);
     backdrop-filter: blur(18px);
+    /* override absolute centering from desktop */
+    transform: none;
+    left: 16px;
   }
 
   .nav-links.open {

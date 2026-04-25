@@ -128,22 +128,17 @@
 
       <section class="section shell" id="work">
         <div class="section-heading">
-          <div>
-            <span class="eyebrow">Selected Works</span>
-            <h2>Full-stack Java work shaped by backend systems, secure APIs, and real operational workflows.</h2>
+          <span class="eyebrow">Selected Works</span>
+          <h2>Full-stack Java work shaped by backend systems, secure APIs, and real operational workflows.</h2>
+        </div>
+        <div class="project-toolbar">
+          <div class="filter-tabs" role="tablist" aria-label="Project filters">
+            <button class="active" type="button" data-filter="all">All</button>
+            <button type="button" data-filter="platform">Platform</button>
+            <button type="button" data-filter="monitoring">Monitoring</button>
+            <button type="button" data-filter="systems">Systems</button>
           </div>
-          <div class="project-tools">
-            <div class="filter-tabs" role="tablist" aria-label="Project filters">
-              <button class="active" type="button" data-filter="all">All</button>
-              <button type="button" data-filter="platform">Platform</button>
-              <button type="button" data-filter="monitoring">Monitoring</button>
-              <button type="button" data-filter="systems">Systems</button>
-            </div>
-            <label class="search-field">
-              <span>Search</span>
-              <input type="search" placeholder="Search projects" data-project-search />
-            </label>
-          </div>
+          <input class="search-input" type="search" placeholder="Search projects..." data-project-search />
         </div>
 
         <div class="project-grid" data-project-grid></div>
